@@ -5,4 +5,7 @@ app.get('/', (req, res) => {
   res.send({ ivan: 'baena' });
 });
 
-app.listen(5000);
+//PRODUCTION/LOCAL
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT);
